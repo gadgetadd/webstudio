@@ -1,0 +1,5 @@
+@mixin transition($props...) {
+  transition-property: $props;
+  transition-duration: 250ms;
+  transition-timing-function: $function-cubic;
+}

@@ -1,0 +1,129 @@
+.modal-form {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-form__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-text-secondary;
+}
+
+.modal-form__field {
+    margin-bottom: 10px;
+}
+
+.modal-form__label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $color-text-primary;
+}
+
+.modal-form__input-field {
+    position: relative;
+}
+
+.modal-form__input {
+    width: 100%;
+    padding: 11px 11px 11px 41px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms $function-cubic;
+
+    &:focus {
+        border-color: $color-text-accent;
+    }
+
+    &[name='comment'] {
+        height: 120px;
+        padding: 11px 15px;
+        resize: none;
+    }
+}
+
+.modal-form__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $color-text-secondary;
+    transition: fill 250ms $function-cubic;
+
+    .modal-form__input:focus+& {
+        fill: $color-text-accent;
+    }
+}
+
+.modal-form__comment-field {
+    margin-bottom: 20px;
+}
+
+.modal-form__checkbox {
+    margin-bottom: 30px;
+}
+
+.checkbox__label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: 12px;
+}
+
+.checkbox__field {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $color-text-secondary;
+    border-radius: 2px;
+    transition: background-color 250ms $function-cubic, border-color 250ms $function-cubic;
+}
+
+.checkbox__icon {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    opacity: 0;
+    transition: opacity 250ms $function-cubic;
+}
+
+.checkbox__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:focus+.checkbox__field {
+        border-color: $color-text-accent;
+    }
+    
+    &:checked+.checkbox__field {
+        border-color: $color-text-accent;
+        background-color: $color-text-accent;
+    }
+    
+    &:checked+.checkbox__field .checkbox__icon {
+        opacity: 1;
+    }
+}
+
+.checkbox__policy {
+    color: $color-text-primary;
+    line-height: 1.71;
+}
+
+.checkbox__link {
+    color: $color-text-accent;
+}
+
+.modal-form__button {
+    margin: 0 auto;
+}
