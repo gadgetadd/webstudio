@@ -54,7 +54,7 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  transition: background-color 250ms $function-cubic;
+  @include transition(background-color);
 
   &:hover,
   &:focus {

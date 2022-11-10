@@ -75,7 +75,7 @@
     text-align: start;
   }
 
-  transition: color 250ms $function-cubic;
+   @include transition(color);
 
   &:hover,
   &:focus {
@@ -130,7 +130,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   color: $color-text-white;
 
-  transition: background-color 250ms $function-cubic;
+   @include transition(background-color);
 
   &:hover,
   &:focus {

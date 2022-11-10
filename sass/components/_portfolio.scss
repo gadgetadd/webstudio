@@ -21,7 +21,7 @@
   display: block;
   box-shadow: none;
   @extend %link;
-  transition: box-shadow 250ms $function-cubic;
+  @include transition(box-shadow);
 
   &:hover,
   &:focus {
@@ -80,7 +80,7 @@
   letter-spacing: 0.03em;
 
   transform: translateY(100%);
-  transition: transform 250ms $function-cubic;
+  @include transition(transform);
 
   .project__link:hover &,
   .project__link:focus & {

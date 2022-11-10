@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -480,6 +480,7 @@
         </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="backdrop__modal">
         <form class="modal-form">
@@ -543,28 +544,50 @@
         </button>
       </div>
     </div>
+    <!-- Мобільне меню -->
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="mobile-menu__button mobile-button js-close-menu">
         <svg class="mobile-button__icon" width="40px" height="40px">
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
-
-      <ul class="mobile-menu__links">
-        <li><a href="" class="mobile-menu__link">Студія</a></li>
-        <li><a href="" class="mobile-menu__link">Портфоліо</a></li>
-        <li><a href="" class="mobile-menu__link">Контакти</a></li>
+      <ul class="mobile-menu__nav mobile-nav">
+        <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link">Студія</a></li>
+        <li class="mobile-nav__item">
+          <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакти</a></li>
       </ul>
-      <ul class="mobile-menu__contacts">
-        <li><a href="tel:+380961111111" class="-">+38 096 111 11 11</a></li>
-        <li><a href="mailto:info@devstudio.com" class="-">info@devstudio.com</a></li>
-      </ul>
-      <ul class="mobile-menu__socials">
-        <li><a href="" class="-">Instagram</a></li>
-        <li><a href="" class="-">Twitter</a></li>
-        <li><a href="" class="-">Facebook</a></li>
-        <li><a href="" class="-">LinkedIn</a></li>
-      </ul>
+      <div>
+        <ul class="mobile-menu__contacts mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--phone"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link mobile-contacts__link--mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials mobile-socials">
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Instagram</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script defer src="./js/modal.js"></script>
     <script

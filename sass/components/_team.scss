@@ -84,7 +84,7 @@
   border-radius: 50%;
   color: $color-icon;
 
-  transition: color 250ms $function-cubic, background-color 250ms $function-cubic;
+  @include transition(color, background-color);
 
   &:hover,
   &:focus {

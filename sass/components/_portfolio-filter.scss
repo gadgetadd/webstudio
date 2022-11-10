@@ -34,8 +34,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  transition: color 250ms $function-cubic, background-color 250ms $function-cubic,
-    box-shadow 250ms $function-cubic;
+  @include transition(color, background-color, box-shadow);
 
   &:hover,
   &:focus {
