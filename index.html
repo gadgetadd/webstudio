@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -133,7 +127,7 @@
         </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section class="examples section section--no-top-padding">
+      <section class="example s section section--no-top-padding">
         <div class="container">
           <h2 class="section-title examples__title">Чим ми займаємося</h2>
           <ul class="examples__list">
@@ -181,6 +175,7 @@
             <li class="team__card team-card">
               <img
                 class="team-card__photo"
+                srcset=""
                 src="./images/team1.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
@@ -552,7 +547,9 @@
         </svg>
       </button>
       <ul class="mobile-menu__nav mobile-nav">
-        <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link">Студія</a></li>
+        <li class="mobile-nav__item">
+          <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+        </li>
         <li class="mobile-nav__item">
           <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
         </li>
