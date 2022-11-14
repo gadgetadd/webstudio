@@ -551,12 +551,7 @@ img {
 
 .features__text {
   line-height: 1.71;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .features__text {
-    text-align: start;
-  }
+  text-align: start;
 }
 
 .team {
@@ -741,7 +736,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio__buttons {
     margin-bottom: 50px;
   }
@@ -920,9 +915,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;

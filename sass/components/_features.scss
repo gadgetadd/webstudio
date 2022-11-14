@@ -43,9 +43,5 @@
 
 .features__text {
   line-height: 1.71;
-  text-align: center;
-
-  @media screen and (min-width: $tablet) {
-    text-align: start;
-  }
+  text-align: start;
 }

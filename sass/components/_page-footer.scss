@@ -17,7 +17,7 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 
@@ -35,9 +35,6 @@
     margin-bottom: 0;
   }
 }
-
-// .footer-links__socials {
-// }
 
 .footer__logo {
   margin-bottom: 20px;
